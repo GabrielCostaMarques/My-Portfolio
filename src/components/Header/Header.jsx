@@ -1,8 +1,10 @@
 import styles from '../style/Header.module.css'
-
+import { useState } from 'react'
 
 
 export default function Header(){
+
+    const [scrolled, setScrolled] = useState(false)
     // const themeChange=()=>{
     //     var toggle= document.getElementById("toggle");
 
@@ -12,14 +14,24 @@ export default function Header(){
     //     }
     // }
     // themeChange()
+
+
+    const handleScroll = () => {
+        if (window.scrollY > 130) {
+            setScrolled(true)
+        } else {
+            setScrolled(false)
+        }
+    }
+    window.addEventListener("scroll", handleScroll)
+
     return(
         <header>
                 
-            <div className={styles.headerContent}>
+                <div className={`${styles.headerContent} ${scrolled ? styles.scrollDown : ""}`}>
                 <nav>
-                    <a href="#overview">OVERVIEW</a>
-                    <a href="#projetos">PROJETOS</a>
-                    <a href="#projetos">TESTE</a>
+                    <a href="#overview">ABOUT ME</a>
+                    <a href="#projetos">PROJECTS</a>
 
                     {/* <div className='' >
                         <input type="checkbox" name="toggleColor" id="toggle" />

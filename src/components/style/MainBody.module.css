@@ -38,6 +38,11 @@
 .slideInUp {
     opacity: 0;
     animation: slideInUp 1.5s forwards;
+    max-width: 700px;
+  }
+
+  .slideInUp p{
+    line-height: 6px;
   }
 
 
