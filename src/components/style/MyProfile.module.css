@@ -36,7 +36,8 @@
 
 .ProjectImage{
     width: 400px;
-
+    max-height: 171px;
+    object-fit: cover;
     border-radius: 20px;
 }
 

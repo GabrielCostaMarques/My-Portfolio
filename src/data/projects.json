@@ -26,12 +26,15 @@
 
      {
       "stack": "BACKEND",
-      "description": "Esse é um exercício prático usando listas em C#",
-      "image": "../taskExercicie.jpg",
+      "description": "A TechLibrary é uma api que foi desenvolvida para estudar sobre API em .NET Core, arquitetura em camadas, sistema de login e reserva de livros por usuário",
+      "image": "../techLibraryImage.jpg",
       "icons": [
-        {"icon":"../c-sharp.png"}
+        {"icon":"../c-sharp.png"},
+        {"icon":"../logo-swagger.png"},
+        {"icon":"../ef.png"},
+        {"icon":"../sqlite.png"}
     ],
-      "link": "https://github.com/GabrielCostaMarques/CourseCsharp/tree/master/CourseCsharp/TaskExercicie"
+      "link": "https://github.com/GabrielCostaMarques/TechLibrary"
      }
     
     ]
