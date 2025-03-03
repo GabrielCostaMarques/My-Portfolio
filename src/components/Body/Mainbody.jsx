@@ -13,7 +13,7 @@ export default function MainBody() {
                 <p className={style.slideInUp}>A developer from Brazil who graduated from FIAP University with a full scholarship. Over the past year, I've been dedicated to learning English to enhance my communication skills and broaden my professional opportunities. <br></br>Currently, I'm delving into the .NET Framework and finding it highly engaging. I have experience in Front-End development using React.js and Mobile Development with React Native. You can explore some of my projects below</p>
 
                 <div className={style.ContentButtonMain}>
-                    <button>Download CV</button>
+                    <button onClick={()=>{window.open("https://drive.google.com/file/d/1Z4UQp5GmUEHtjdRc2rlsE7aJYaKyeuCl/view?usp=sharing","_blank")}}>Download CV</button>
                 </div>
 
             </div>
