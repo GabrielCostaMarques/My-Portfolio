@@ -47,9 +47,9 @@
 }
 
 .IconProject{
-    max-width: 50px;
+    width: 50px;
     object-fit: contain;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .TagProject span{

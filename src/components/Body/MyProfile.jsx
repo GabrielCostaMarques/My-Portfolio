@@ -10,7 +10,7 @@ export default function MyProfile() {
             <h2 style={{ display: 'block', marginLeft: 10 }}>TOP PROJETOS</h2>
 
             <div>
-                {datas.map((data,index) => (
+                {datas.map((data, index) => (
                     <div key={index} className={style.ProjectsBlocks}>
                         {/* Tags e Ícones */}
                         <div className={style.BoxTags}>
@@ -40,16 +40,16 @@ export default function MyProfile() {
                             <div className={style.InfoDescription}>
                                 <p>{data.description}<br></br><br></br><br></br>
                                 </p>
-                                    {data.link && (
-                                        <button className={style.ProjectLink} onClick={() => window.open(data.link, "_blank")}> Ver Projeto</button>
-                                    )}
+                                {data.link && (
+                                    <button className={style.ProjectLink} onClick={() => window.open(data.link, "_blank")}> Ver Projeto</button>
+                                )}
                             </div>
                         </div>
 
                     </div>
                 ))}
             </div>
-                {/* <Link to={""}></Link> */}
+            {/* <Link to={""}></Link> */}
         </section>
     );
 }
