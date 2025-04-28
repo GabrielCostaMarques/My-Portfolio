@@ -1,16 +1,31 @@
 import style from '../style/MyProfile.module.css';
 import projects from '../../data/projects.json';
+import { useState } from 'react';
 
 
 export default function MyProfile() {
     const datas = projects.projects;
 
+    const [visibleCount, setVisibleCount] = useState(3)
+    const [showLoadMore, setShowLoadMore] = useState(true);
+
+
+    const handleLoadMore = () => {
+        setVisibleCount((prev) => prev + 4);
+        if (visibleCount + 4 >= datas.length) {
+            setShowLoadMore(false);
+        }
+    };
+
+
+    const visibleItems = datas.slice(0, visibleCount)
+
     return (
         <section className={style.BodyProjects} id="projetos">
             <h2 style={{ display: 'block', marginLeft: 10 }}>TOP PROJETOS</h2>
 
-            <div>
-                {datas.map((data, index) => (
+            <div className={style.projectsListWrapper}>
+                {visibleItems.map((data, index) => (
                     <div key={index} className={style.ProjectsBlocks}>
                         {/* Tags e Ícones */}
                         <div className={style.BoxTags}>
@@ -49,7 +64,16 @@ export default function MyProfile() {
                     </div>
                 ))}
             </div>
-            {/* <Link to={""}></Link> */}
+            {showLoadMore && (
+                <>
+                    <div className={style.fadeOverlay}></div> {/* FADE */}
+                    <div className={style.loadMoreContainer}>
+                        <button onClick={handleLoadMore}>Ver Mais</button>
+                    </div>
+                </>
+            )}
+
+
         </section>
     );
 }

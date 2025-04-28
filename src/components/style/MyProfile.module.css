@@ -83,7 +83,32 @@
     }
 }
 
+.projectsListWrapper {
+    position: relative;
 
+  }
+  
+  .fadeOverlay {
+    position: relative;
+    bottom: 32em;
+    left: 0;
+    width: 100%;
+    height: 27em;
+    background: linear-gradient(to top, rgba(26, 26, 26, 1), rgba(26, 26, 26, 0));
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .loadMoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    bottom: 31em;
+  }
+  
+  
 
 @media (max-width:768px) {
     .ProjectsBlocks{
