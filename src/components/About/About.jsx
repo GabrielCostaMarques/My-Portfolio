@@ -46,7 +46,6 @@ const About = () => {
               variants={itemVariants}
             >
               <p>
-                Fora do código, gosto de explorar novas tecnologias, ler sobre inteligência artificial e praticar esportes ao ar livre.
               </p>
             </motion.div>
           </div>
