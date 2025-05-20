@@ -52,9 +52,6 @@ const About = () => {
                 Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam por trás das telas, e rapidamente se tornou uma paixão. Tenho um forte background em tecnologias .NET para o backend e React para o frontend, mas estou sempre explorando novas ferramentas e frameworks para aprimorar minhas habilidades.
               </p>
               <p>
-                Acredito que a colaboração e a comunicação são chaves para o sucesso de qualquer projeto. Gosto de trabalhar em equipe, compartilhar conhecimento e enfrentar desafios complexos que me permitam crescer profissionalmente e pessoalmente.
-              </p>
-              <p>
                 Fora do código, gosto de explorar novas tecnologias, ler sobre inteligência artificial e praticar esportes ao ar livre.
               </p>
             </motion.div>
