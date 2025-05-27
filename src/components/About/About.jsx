@@ -46,8 +46,11 @@ const About = () => {
               variants={itemVariants}
             >
               <p>
+<<<<<<< HEAD
                 Sou desenvolvedor formado pela FIAP com bolsa integral e, atualmente, curso uma Pós-Graduação em Arquitetura de Sistemas .NET. Nos últimos anos, venho me dedicando ao aprimoramento contínuo das minhas habilidades técnicas e ao desenvolvimento do meu inglês visando acompanhar melhor conteúdos técnicos e colaborar em ambientes diversos.
                 Tenho experiência em desenvolvimento Front-End com React.js e conhecimento no ecossistema .NET, sempre buscando entregar soluções eficientes e bem estruturadas.
+=======
+>>>>>>> 67a714d76d5cfad98f3036bdbfe9db4706b7ef0f
               </p>
             </motion.div>
           </div>
