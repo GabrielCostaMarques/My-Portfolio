@@ -10,19 +10,19 @@ export const navLinks = [
 export const hardSkills = {
   backend: [
     '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC', 
-    'Arquitetura em camadas', 'API REST', 'Minimal API'
+    'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit'
   ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
   ],
   database: [
-    'MySQL', 'SQLite', 'Firebase (Firestore/Realtime DB)'
+    'MySQL', 'SQLite','SQL Server', 'Firebase (Firestore/Realtime DB)', 
   ],
   cmsLowCode: [
     'Wordpress', 'Elementor'
   ],
   tools: [
-    'Git', 'Docker (Básico)', 'Azure (Básico)'
+    'Git', 'Docker (Básico)', 'Azure (Básico)','EPPLUS'
   ]
 };
 
@@ -44,7 +44,7 @@ export const projectsData = [
     title: 'SalesWebMvc',
     description: 'Aplicação web de vendas construída com ASP.NET Core MVC e Entity Framework.',
     technologies: ['ASP.NET Core MVC', 'Entity Framework', 'MySQL', 'C#'],
-    imageUrl: 'project_saleswebmvc.jpg',
+    imageUrl: 'SalesWebMvc.jpg',
     githubUrl: 'https://github.com/GabrielCostaMarques/SalesWebMvc',
     liveUrl: null,
   },
@@ -89,7 +89,7 @@ export const projectsData = [
     title: 'ProjectAurora',
     description: 'Projeto Aurora, uma exploração de Minimal APIs e conceitos modernos do .NET.',
     technologies: ['ASP.NET Core', 'Minimal API', 'SQLite', 'C#'],
-    imageUrl: 'project_aurora.jpg',
+    imageUrl: 'capa-aurora.jpg',
     githubUrl: 'https://github.com/GabrielCostaMarques/ProjectAurora',
     liveUrl: "https://aurora.portifoliogabrielmarques.com/",
   },

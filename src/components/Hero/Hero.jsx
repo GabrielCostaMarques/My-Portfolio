@@ -26,7 +26,7 @@ const Hero = () => {
   };
 
   const title = "Olá, eu sou Gabriel Marques";
-  const subtitleText = "Desenvolvedor Full Stack .NET & React";
+  const subtitleText = "Desenvolvedor Full Stack";
 
   const titleVariants = {
     hidden: { opacity: 0 },
@@ -78,8 +78,6 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: title.length * 0.05 + 0.4 }}
           >
-            Transformando ideias em soluções digitais inovadoras e eficientes.
-            Apaixonado por tecnologia e sempre em busca de novos desafios.
           </motion.p>
           <motion.div 
             className="hero-buttons"
@@ -95,7 +93,7 @@ const Hero = () => {
               Entre em Contato
             </motion.button>
             <motion.a 
-              href="/cv_gabriel_marques.pdf" 
+              href="/Gabriel_Costa_Marques_CV.pdf" 
               className="button button-outline" 
               download
               whileHover={{scale:1, boxShadow: "0px 0px 15px rgba(59, 154, 255, 0.3)" }}
@@ -110,7 +108,7 @@ const Hero = () => {
           animate={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.8, delay: 0.6, type: 'spring', stiffness: 100 }}
         >
-          <img  className="hero-image" alt="Gabriel Marques - Desenvolvedor sorrindo" src="https://images.unsplash.com/photo-1529661197280-63dc545366c8" />
+          <img  className="hero-image" alt="Gabriel Marques - Desenvolvedor sorrindo" src="\img-hero.jpg" />
         </motion.div>
       </div>
       <motion.div 

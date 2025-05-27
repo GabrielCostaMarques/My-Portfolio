@@ -39,14 +39,15 @@ const About = () => {
               className="about-image-container"
               variants={imageVariants}
             >
-              <img  className="about-image" alt="Gabriel Marques trabalhando em um projeto de codificação" src="https://images.unsplash.com/photo-1505975297569-3e017ea9436d" />
+              <img  className="about-image" alt="Gabriel Marques trabalhando em um projeto de codificação" src="\beca.jpg" />
             </motion.div>
             <motion.div 
               className="about-text"
               variants={itemVariants}
             >
               <p>
-                Fora do código, gosto de explorar novas tecnologias, ler sobre inteligência artificial e praticar esportes ao ar livre.
+                Sou desenvolvedor formado pela FIAP com bolsa integral e, atualmente, curso uma Pós-Graduação em Arquitetura de Sistemas .NET. Nos últimos anos, venho me dedicando ao aprimoramento contínuo das minhas habilidades técnicas e ao desenvolvimento do meu inglês visando acompanhar melhor conteúdos técnicos e colaborar em ambientes diversos.
+                Tenho experiência em desenvolvimento Front-End com React.js e conhecimento no ecossistema .NET, sempre buscando entregar soluções eficientes e bem estruturadas.
               </p>
             </motion.div>
           </div>

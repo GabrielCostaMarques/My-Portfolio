@@ -90,7 +90,7 @@ const Contact = () => {
               className="contact-form-placeholder"
               variants={itemVariantsRight}
             >
-               
+               <img className="contact-image-decorative" src="public\perfil_portifolio.png" alt="" />
                <p className="form-placeholder-text">Ou me envie uma mensagem direta!</p>
                <motion.button 
                 className="button contact-send-button"

@@ -51,7 +51,7 @@ const Projects = () => {
               transition={{ type: "spring", stiffness: 100, damping: 15 }}
             >
               <div className="project-image-container">
-                <img  className="project-image" alt={project.title} src={`https://source.unsplash.com/random/400x220/?technology,code,abstract&sig=${project.id}`} />
+                <img  className="project-image" alt={project.title} src={`${project.imageUrl}`} />
                 <motion.div 
                   className="project-overlay"
                   initial={{ opacity: 0 }}
