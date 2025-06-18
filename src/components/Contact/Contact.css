@@ -112,6 +112,7 @@
   .contact-content-wrapper {
     gap: 40px;
     padding: 40px;
+    align-items: center;
   }
   .contact-form-placeholder {
     padding: 30px;
@@ -127,6 +128,7 @@
   }
   .contact-item {
     justify-content: center;
+    flex-direction: column;
   }
    .social-links-contact p {
     text-align: center;

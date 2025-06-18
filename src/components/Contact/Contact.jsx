@@ -94,7 +94,7 @@ const Contact = () => {
                <p className="form-placeholder-text">Ou me envie uma mensagem direta!</p>
                <motion.button 
                 className="button contact-send-button"
-                whileHover={{ scale: 1, boxShadow: "0px 0px 15px rgba(0, 230, 118, 0.5)" }}
+                
                 whileTap={{ scale: 0.95 }}
                 onClick={() => window.location.href = `mailto:${contactInfo.email}?subject=Contato%20via%20Portfólio`}
                >

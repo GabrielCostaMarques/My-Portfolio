@@ -9,7 +9,7 @@ export const navLinks = [
 
 export const hardSkills = {
   backend: [
-    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC', 
+    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC','Repository Pattern',
     'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit'
   ],
   frontend: [
@@ -50,11 +50,11 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'StockManagement',
+    title: 'StorageProject',
     description: 'Sistema de gerenciamento de estoque para controle de produtos e movimentações.',
-    technologies: ['.NET Core', 'Entity Framework', 'Arquitetura em Camadas', 'C#'],
+    technologies: ['.NET Core', 'Entity Framework', 'Arquitetura em Camadas', 'Repository Pattern','UnitOfWork'],
     imageUrl: 'project_stockmanagement.jpg',
-    githubUrl: 'https://github.com/GabrielCostaMarques/StockManagement',
+    githubUrl: 'https://github.com/GabrielCostaMarques/StorageProject.git',
     liveUrl: null,
   },
   {
@@ -91,7 +91,7 @@ export const projectsData = [
     technologies: ['ASP.NET Core', 'Minimal API', 'SQLite', 'C#'],
     imageUrl: 'capa-aurora.jpg',
     githubUrl: 'https://github.com/GabrielCostaMarques/ProjectAurora',
-    liveUrl: "https://aurora.portifoliogabrielmarques.com/",
+    liveUrl: null,
   },
 ];
 

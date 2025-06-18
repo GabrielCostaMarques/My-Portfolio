@@ -88,7 +88,6 @@ const Hero = () => {
             <motion.button 
               className="button" 
               onClick={scrollToContact}
-              whileHover={{scale:1, boxShadow: "0px 0px 15px rgba(59, 154, 255, 0.5)" }}
             >
               Entre em Contato
             </motion.button>
@@ -96,7 +95,6 @@ const Hero = () => {
               href="/Gabriel_Costa_Marques_CV.pdf" 
               className="button button-outline" 
               download
-              whileHover={{scale:1, boxShadow: "0px 0px 15px rgba(59, 154, 255, 0.3)" }}
             >
               Baixar CV
             </motion.a>

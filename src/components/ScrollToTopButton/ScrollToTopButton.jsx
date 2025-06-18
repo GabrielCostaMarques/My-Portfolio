@@ -39,7 +39,6 @@ const ScrollToTopButton = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.3 }}
-          whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(0, 230, 118, 0.7)"}}
           whileTap={{ scale: 0.95 }}
         >
           <ArrowUp size={24} />
