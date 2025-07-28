@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle, Brain, Users, Database, Code, Wrench as Tool, Briefcase } from 'lucide-react';
+import { CheckCircle, Brain, Users, Database, Code, Wrench as Tool, Briefcase,Cloud } from 'lucide-react';
 import { hardSkills, softSkills } from '@/data';
 import './Skills.css';
 
@@ -40,6 +40,7 @@ const Skills = () => {
     { title: 'Frontend', skills: hardSkills.frontend, icon: <Code size={24} className="category-icon-title"/> },
     { title: 'Bancos de Dados', skills: hardSkills.database, icon: <Database size={24} className="category-icon-title"/> },
     { title: 'CMS & Low Code', skills: hardSkills.cmsLowCode, icon: <Briefcase size={24} className="category-icon-title"/> },
+    { title: 'Cloud', skills: hardSkills.nuvem, icon: <Cloud size={24} className="category-icon-title"/> },
     { title: 'Ferramentas & Outros', skills: hardSkills.tools, icon: <Tool size={24} className="category-icon-title"/> },
   ];
 

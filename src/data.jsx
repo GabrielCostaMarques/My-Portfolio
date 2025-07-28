@@ -9,21 +9,25 @@ export const navLinks = [
 
 export const hardSkills = {
   backend: [
-    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC','Repository Pattern',
+    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC', 'Repository Pattern',
     'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit'
   ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
   ],
   database: [
-    'MySQL', 'SQLite','SQL Server', 'Firebase (Firestore/Realtime DB)', 
+    'MySQL', 'SQLite', 'SQL Server', 'PostgreSQL', 'MongoDB'
   ],
   cmsLowCode: [
     'Wordpress', 'Elementor'
   ],
   tools: [
-    'Git', 'Docker (Básico)', 'Azure (Básico)','EPPLUS'
+    'Git', 'EPPLUS', 'Swagger', 'Postman', 'Visual Studio', 'Visual Studio Code','Figma',
+  ],
+  nuvem:[
+    'GitHub Actions', 'Docker', 'Firebase',
   ]
+
 };
 
 export const softSkills = [
@@ -52,13 +56,23 @@ export const projectsData = [
     id: 2,
     title: 'StorageProject',
     description: 'Sistema de gerenciamento de estoque para controle de produtos e movimentações.',
-    technologies: ['.NET Core', 'Entity Framework', 'Arquitetura em Camadas', 'Repository Pattern','UnitOfWork'],
-    imageUrl: 'project_stockmanagement.jpg',
+    technologies: ['.NET Core', 'Entity Framework', 'Arquitetura em Camadas', 'Repository Pattern', 'UnitOfWork','Swagger', 'C#', 'MySQL', 'FluentValidation'],
+    imageUrl: 'capa-storage-project.png',
     githubUrl: 'https://github.com/GabrielCostaMarques/StorageProject.git',
     liveUrl: null,
   },
   {
     id: 3,
+    title: 'OfertasCSV',
+    description: 'Sistema consome dados de um flatfile CSV e gera ofertas em um arquivo json que é enviado para o banco de dados do site Wordpress.',
+    technologies: ['.NET Core', 'Expressão Lambda', 'HelperCSV', 'Consumo de API', 'Renderização', 'Lazy Loading'],
+    imageUrl: 'capa-ofertas-csv.png',
+    githubUrl: 'https://github.com/GabrielCostaMarques/OfertasCsv',
+    liveUrl: 'https://manualdoagente.com.br/saidas-azamara/',
+  },
+
+  {
+    id: 4,
     title: 'ExcelOffers',
     description: 'Ferramenta para processar e gerenciar ofertas a partir de arquivos Excel.',
     technologies: ['.NET Framework', 'Windows Forms', 'Manipulação de Excel', 'C#'],
@@ -67,16 +81,16 @@ export const projectsData = [
     liveUrl: null,
   },
   {
-    id: 4,
+    id: 5,
     title: 'TesteThoth',
-    description: 'Projeto de teste para a Thoth, explorando funcionalidades específicas de API.',
-    technologies: ['ASP.NET Core', 'API REST', 'C#'],
-    imageUrl: 'project_testethoth.jpg',
+    description: 'Projeto de teste para a Thoth, explorando funcionalidades do Windows Forms e CRUD.',
+    technologies: ['ASP.NET Core', 'API REST', 'C#', 'Windows Forms', 'Entity Framework'],
+    imageUrl: 'teste-thoth.png',
     githubUrl: 'https://github.com/GabrielCostaMarques/TesteThoth',
     liveUrl: null,
   },
   {
-    id: 5,
+    id: 6,
     title: 'TechLibrary',
     description: 'Biblioteca digital para gerenciamento de recursos técnicos e livros, com API e frontend.',
     technologies: ['.NET Core', 'React', 'API REST', 'SQLite', 'C#', 'JavaScript'],
@@ -85,10 +99,10 @@ export const projectsData = [
     liveUrl: null,
   },
   {
-    id: 6,
+    id: 7,
     title: 'ProjectAurora',
-    description: 'Projeto Aurora, uma exploração de Minimal APIs e conceitos modernos do .NET.',
-    technologies: ['ASP.NET Core', 'Minimal API', 'SQLite', 'C#'],
+    description: 'Projeto Aurora, é um e-commerce que explora React, Navigation e consumo de APIs estou fazendo esse projeto para aprender mais sobre React e suas funcionalidades.',
+    technologies: ['React', 'Navigation', 'Axios', 'JSX', 'JavaScript', 'HTML', 'CSS', 'Vite JS', 'Firebase'],
     imageUrl: 'capa-aurora.jpg',
     githubUrl: 'https://github.com/GabrielCostaMarques/ProjectAurora',
     liveUrl: null,
@@ -103,4 +117,3 @@ export const contactInfo = {
     { name: 'GitHub', url: 'https://github.com/GabrielCostaMarques', icon: 'Github' },
   ]
 };
-  
