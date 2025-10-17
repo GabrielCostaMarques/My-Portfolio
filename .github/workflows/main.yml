@@ -3,28 +3,24 @@ name: Update Portfolio
 on:
   push:
     branches:
-      - main
+      - main  # quando houver push na branch main
 
 jobs:
   build:
+    name: Deploy gh-pages
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout do repositório
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Configurar Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '22.x'
 
-      - name: Install dependencies
+      - name: Instalar dependências
         run: npm install
 
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: npx gh-pages -d dist -u "github-actions-bot <actions@github.com>"
+      - name: Executar deploy
+        run: npm run deploy
