@@ -92,7 +92,7 @@ const Hero = () => {
               Entre em Contato
             </motion.button>
             <motion.a 
-              href="/Gabriel_Costa_Marques_CV.pdf" 
+              href="Gabriel_Costa_Marques_CV.pdf" 
               className="button button-outline" 
               download
             >
@@ -106,7 +106,7 @@ const Hero = () => {
           animate={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.8, delay: 0.6, type: 'spring', stiffness: 100 }}
         >
-          <img  className="hero-image" alt="Gabriel Marques - Desenvolvedor sorrindo" src="\img-hero.jpg" />
+          <img  className="hero-image" alt="Gabriel Marques - Desenvolvedor sorrindo" src="img-hero.jpg" />
         </motion.div>
       </div>
       <motion.div 

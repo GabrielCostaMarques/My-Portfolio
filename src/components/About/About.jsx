@@ -39,7 +39,7 @@ const About = () => {
               className="about-image-container"
               variants={imageVariants}
             >
-              <img  className="about-image" alt="Gabriel Marques trabalhando em um projeto de codificação" src="\beca.jpg" />
+              <img  className="about-image" alt="Gabriel Marques trabalhando em um projeto de codificação" src="beca.jpg" />
             </motion.div>
             <motion.div 
               className="about-text"
