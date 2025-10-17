@@ -10,7 +10,7 @@ export const navLinks = [
 export const hardSkills = {
   backend: [
     '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC', 'Repository Pattern',
-    'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit'
+    'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit, Node.js', 'Express', 'JWT'
   ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
@@ -45,6 +45,15 @@ export const softSkills = [
 export const projectsData = [
   {
     id: 1,
+    title: 'StorageProject',
+    description: 'Sistema de gerenciamento de estoque para controle de produtos e movimentações. Possui autenticação e autorização de usuários com diferentes níveis de acesso utilizando JWT funcionando de um micro serviço para usuários.',
+    technologies: ['.NET Core', 'Entity Framework', 'JWT', 'Arquitetura em Camadas', 'Repository Pattern', 'UnitOfWork','Swagger', 'C#', 'SQL Server', 'FluentValidation', 'XUnit', 'Moq', 'Result Pattern'],
+    imageUrl: 'Storage-project.jpg',
+    githubUrl: 'https://github.com/orgs/StorageAppOfWizard/repositories',
+    liveUrl: null,
+  },
+  {
+    id: 2,
     title: 'SalesWebMvc',
     description: 'Aplicação web de vendas construída com ASP.NET Core MVC e Entity Framework.',
     technologies: ['ASP.NET Core MVC', 'Entity Framework', 'MySQL', 'C#'],
@@ -52,15 +61,7 @@ export const projectsData = [
     githubUrl: 'https://github.com/GabrielCostaMarques/SalesWebMvc',
     liveUrl: null,
   },
-  {
-    id: 2,
-    title: 'StorageProject',
-    description: 'Sistema de gerenciamento de estoque para controle de produtos e movimentações.',
-    technologies: ['.NET Core', 'Entity Framework', 'Arquitetura em Camadas', 'Repository Pattern', 'UnitOfWork','Swagger', 'C#', 'MySQL', 'FluentValidation'],
-    imageUrl: 'capa-storage-project.png',
-    githubUrl: 'https://github.com/GabrielCostaMarques/StorageProject.git',
-    liveUrl: null,
-  },
+
   {
     id: 3,
     title: 'OfertasCSV',
@@ -100,11 +101,11 @@ export const projectsData = [
   },
   {
     id: 7,
-    title: 'ProjectAurora',
-    description: 'Projeto Aurora, é um e-commerce que explora React, Navigation e consumo de APIs estou fazendo esse projeto para aprender mais sobre React e suas funcionalidades.',
-    technologies: ['React', 'Navigation', 'Axios', 'JSX', 'JavaScript', 'HTML', 'CSS', 'Vite JS', 'Firebase'],
-    imageUrl: 'capa-aurora.jpg',
-    githubUrl: 'https://github.com/GabrielCostaMarques/ProjectAurora',
+    title: 'Estoque Simples com Node.js',
+    description: 'Um sistema básico para controlar produtos, permitindo cadastrar, listar, atualizar e remover itens. O sistema possuí autenticação simples para proteger o acesso.',
+    technologies: ['React', 'Navigation', 'Axios', 'JSX', 'JavaScript', 'Vite JS', 'Mongoose', 'Node.js', 'Express', 'JWT', 'MongoDB'],
+    imageUrl: 'comunikime-project.jpg',
+    githubUrl: 'https://github.com/GabrielCostaMarques/Comunikime.git',
     liveUrl: null,
   },
 ];
