@@ -9,16 +9,23 @@ jobs:
   build:
     name: Deploy gh-pages
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
+
       - name: Configurar Node.js
         uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: '18'
+
       - name: Instalar dependências
         run: npm install
-      
-      - name: Executando deploy
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+
+      - name: Executar deploy
         run: npm run deploy
-      
