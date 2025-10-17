@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://$GITHUB_ACTOR:${ACTIONS_DEPLOY_TOKEN}@github.com/GabrielCostaMarques/My-Portfolio.git"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.1",
