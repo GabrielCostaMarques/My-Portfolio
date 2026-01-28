@@ -9,8 +9,8 @@ export const navLinks = [
 
 export const hardSkills = {
   backend: [
-    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'MVC', 'Repository Pattern',
-    'Arquitetura em camadas', 'API REST', 'Minimal API', 'XUnit, Node.js', 'Express', 'JWT'
+    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'Dapper', 'Arquitetura MVC', 'Repository Pattern',
+    'API REST', 'Minimal API', 'XUnit', 'Node.js', 'Express', 'JWT'
   ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
@@ -19,13 +19,13 @@ export const hardSkills = {
     'MySQL', 'SQLite', 'SQL Server', 'PostgreSQL', 'MongoDB'
   ],
   cmsLowCode: [
-    'Wordpress', 'Elementor'
+    'Wordpress', 'Elementor', 'ACF', 'JetEngine'
   ],
   tools: [
     'Git', 'EPPLUS', 'Swagger', 'Postman', 'Visual Studio', 'Visual Studio Code','Figma',
   ],
   nuvem:[
-    'GitHub Actions', 'Docker', 'Firebase',
+    'GitHub Actions', 'Docker', 'Kubernetes', 'Azure', 'AWS', 'Firebase',
   ]
 
 };
