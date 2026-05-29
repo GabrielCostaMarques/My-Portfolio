@@ -9,9 +9,9 @@ export const navLinks = [
 
 export const hardSkills = {
   backend: [
-    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'Dapper', 'Arquitetura MVC', 'Repository Pattern',
-    'API REST', 'Minimal API', 'XUnit', 'Node.js', 'Express', 'JWT'
-  ],
+    '.NET Core', 'ASP.NET Core', 'Entity Framework', 'Dapper', 'RabbitMQ', 'MassTransit', 'Arquitetura MVC','UnitOfWork', 'Redis', 'Repository Pattern',
+    'API REST', 'Minimal API', 'XUnit', 'Node.js', 'Express', 'JWT', 'OpenTelemetry', 'Serilog', 'FluentValidation',
+    ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
   ],
@@ -19,10 +19,10 @@ export const hardSkills = {
     'MySQL', 'SQLite', 'SQL Server', 'PostgreSQL', 'MongoDB'
   ],
   cmsLowCode: [
-    'Wordpress', 'Elementor', 'ACF', 'JetEngine'
+    'Wordpress', 'Elementor', 'JetEngine'
   ],
   tools: [
-    'Git', 'EPPLUS', 'Swagger', 'Postman', 'Visual Studio', 'Visual Studio Code','Figma',
+    'Git', 'Azure Devops', 'EPPLUS', 'Swagger', 'Postman', 'Visual Studio', 'Visual Studio Code','Figma',
   ],
   nuvem:[
     'GitHub Actions', 'Docker', 'Kubernetes', 'Azure', 'AWS', 'Firebase',
@@ -47,7 +47,7 @@ export const projectsData = [
     id: 1,
     title: 'StorageProject',
     description: 'Sistema de gerenciamento de estoque para controle de produtos e movimentações. Possui autenticação e autorização de usuários com diferentes níveis de acesso utilizando JWT funcionando de um micro serviço para usuários.',
-    technologies: ['.NET Core', 'Entity Framework', 'JWT', 'Arquitetura em Camadas', 'Repository Pattern', 'UnitOfWork','Swagger', 'C#', 'SQL Server', 'FluentValidation', 'XUnit', 'Moq', 'Result Pattern'],
+    technologies: ['.NET Core', 'Entity Framework', 'JWT', 'RabbitMQ', 'Masstransit', 'UnitOfWork','Swagger', 'C#', 'PostgreSQL', 'FluentValidation', 'XUnit', 'Moq', 'Result Pattern','Docker','Serilog','OpenTelemetry'],
     imageUrl: 'Storage-project.jpg',
     githubUrl: 'https://github.com/orgs/StorageAppOfWizard/repositories',
     liveUrl: null,
@@ -61,9 +61,18 @@ export const projectsData = [
     githubUrl: 'https://github.com/GabrielCostaMarques/SalesWebMvc',
     liveUrl: null,
   },
-
   {
     id: 3,
+    title: 'ETL Azamara',
+    description: 'Pipeline ETL que coleta dados de cruzeiros do servidor da Azamara Cruises, normaliza e expõe via API REST com suporte a consultas complexas. O projeto substituiu um serviço terceirizado contratado pela R11 Travel, gerandoredução direta de custos operacionais - está em aprovação. Front-end em React.js em produção (Todas as chaves estão revogadas e o projeto é apenas para fins de portfólio, sem uso comercial.)',
+    technologies: ['ASP.NET Core MVC', 'Dapper', 'PostgreSQL', 'C#', 'Docker', 'Docker Compose', 'Api REST'],
+    imageUrl: 'etl_azamara.png',
+    githubUrl: 'https://github.com/R11-Travel/Azamara-Web-Infra',
+    liveUrl: 'https://azamaracruises.com.br/',
+  },
+
+  {
+    id: 4,
     title: 'OfertasCSV',
     description: 'Sistema consome dados de um flatfile CSV e gera ofertas em um arquivo json que é enviado para o banco de dados do site Wordpress.',
     technologies: ['.NET Core', 'Expressão Lambda', 'HelperCSV', 'Consumo de API', 'Renderização', 'Lazy Loading'],
@@ -73,7 +82,7 @@ export const projectsData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'ExcelOffers',
     description: 'Ferramenta para processar e gerenciar ofertas a partir de arquivos Excel.',
     technologies: ['.NET Framework', 'Windows Forms', 'Manipulação de Excel', 'C#'],
@@ -82,7 +91,7 @@ export const projectsData = [
     liveUrl: null,
   },
   {
-    id: 5,
+    id: 6,
     title: 'TesteThoth',
     description: 'Projeto de teste para a Thoth, explorando funcionalidades do Windows Forms e CRUD.',
     technologies: ['ASP.NET Core', 'API REST', 'C#', 'Windows Forms', 'Entity Framework'],
@@ -91,7 +100,7 @@ export const projectsData = [
     liveUrl: null,
   },
   {
-    id: 6,
+    id: 7,
     title: 'TechLibrary',
     description: 'Biblioteca digital para gerenciamento de recursos técnicos e livros, com API e frontend.',
     technologies: ['.NET Core', 'React', 'API REST', 'SQLite', 'C#', 'JavaScript'],
@@ -100,7 +109,7 @@ export const projectsData = [
     liveUrl: null,
   },
   {
-    id: 7,
+    id: 8,
     title: 'Estoque Simples com Node.js',
     description: 'Um sistema básico para controlar produtos, permitindo cadastrar, listar, atualizar e remover itens. O sistema possuí autenticação simples para proteger o acesso.',
     technologies: ['React', 'Navigation', 'Axios', 'JSX', 'JavaScript', 'Vite JS', 'Mongoose', 'Node.js', 'Express', 'JWT', 'MongoDB'],

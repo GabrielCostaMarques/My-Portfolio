@@ -92,7 +92,7 @@ const Hero = () => {
               Entre em Contato
             </motion.button>
             <motion.a 
-              href="Gabriel_Marques_CV.pdf" 
+              href="CV_Gabriel_Costa_Marques.pdf" 
               className="button button-outline" 
               download
             >
