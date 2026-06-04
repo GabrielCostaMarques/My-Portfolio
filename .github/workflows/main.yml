@@ -1,35 +1,60 @@
-name: Update Portfolio
+name: Deploy Vite App
 
 on:
   push:
     branches:
-      - main  # quando houver push na branch main
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
-    name: Deploy gh-pages
     runs-on: ubuntu-latest
 
     steps:
-    
-      - name: Checkout do repositório
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
+          node-version: 20
+          cache: npm
 
-      - name: Instalar dependências
+      - name: Install dependencies
         run: npm install
 
-      - name: Configurar Git
-        run: |
-          git config --global user.email "gabrielcostamarques2@gmail.com"
-          git config --global user.name "GabrielCostaMarques"
+      - name: Build project
+        run: npm run build
 
-      - name: Deploy para GitHub Pages
-        env:
-          ACTIONS_DEPLOY_TOKEN: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
-          GITHUB_ACTOR: ${{ github.actor }}
-        run: npm run deploy
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
