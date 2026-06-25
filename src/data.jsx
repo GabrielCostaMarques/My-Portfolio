@@ -10,7 +10,7 @@ export const navLinks = [
 export const hardSkills = {
   backend: [
     '.NET Core', 'ASP.NET Core', 'Entity Framework', 'Dapper', 'RabbitMQ', 'MassTransit', 'Arquitetura MVC','UnitOfWork', 'Redis', 'Repository Pattern',
-    'API REST', 'Minimal API', 'XUnit', 'Node.js', 'Express', 'JWT', 'OpenTelemetry', 'Serilog', 'FluentValidation',
+    'API REST', 'Minimal API', 'XUnit', 'Node.js', 'Express', 'JWT', , 'FluentValidation',
     ],
   frontend: [
     'React', 'Vite JS', 'HTML', 'CSS', 'JavaScript'
@@ -26,7 +26,10 @@ export const hardSkills = {
   ],
   nuvem:[
     'GitHub Actions', 'Docker', 'Kubernetes', 'Azure', 'AWS', 'Firebase',
-  ]
+  ],
+  observabilidade:[
+    'OpenTelemetry', 'Serilog', 'New Relic'
+  ],
 
 };
 
